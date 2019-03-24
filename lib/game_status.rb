@@ -48,8 +48,10 @@ elsif board[right_diagonal_win[0]] == "X" && board[right_diagonal_win[1]] == "X"
  def draw?(board)
  if full?(board) == (!won?(board)) 
    true
- elsif full?(board)
+ elsif full?(board) == false
    false
+else
+  false
 end
 end
  
